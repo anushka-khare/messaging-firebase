@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/light_pink"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/user"
+        android:textColor="@color/colorPrimary"
+        android:padding="5dp"
+        android:background="@android:color/holo_orange_light"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messageList"
+        android:layout_below="@+id/user"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+   <EditText
+       android:id="@+id/messageEdt"
+
+       android:textColor="@android:color/black"
+       android:background="@android:color/white"
+       android:layout_alignParentBottom="true"
+       android:layout_width="300dp"
+       android:layout_height="40dp" />
+    <Button
+        android:id="@+id/sendBtn"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/send"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/messageEdt"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+<ProgressBar
+    android:id="@+id/progressBar"
+    android:visibility="gone"
+    style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</RelativeLayout>

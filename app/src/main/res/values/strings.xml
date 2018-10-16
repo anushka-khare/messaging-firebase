@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Messaging</string>
+    <string name="login_error">Login failed, Try again</string>
+    <string name="send">send</string>
+    <string name="phone_number">Phone number</string>
+    <string name="register">Register</string>
+    <string name="channel_name">message_notification</string>
+    <string name="channel_description">Chat message notifications</string>
+</resources>
